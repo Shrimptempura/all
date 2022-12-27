@@ -1,0 +1,38 @@
+<문자열의 다양한 메소드>
+'abc'.upper()       // 대문자로 만든다.
+    'ABC'       
+
+'ABC'.lower()       // 소문자로 만든다.
+    'abc'
+
+'hobby'.count('h')     // 'h' 문자가 나타나는 횟수를 구한다.
+    1
+
+'hobby'.find('h')       // 'h' 문자의 위치를 반환한다.
+    0
+
+','.join('ABCD')        // 매개변수로 넘어온 문자열을 해당 문자를 구분자로 
+    'A,B,C,D'           // 나누어서 반환해 준다.
+
+
+'   hello    '.rstrip()     // 오른쪽 공백 지우기
+    '   hello'
+
+.lstrip()       // 왼쪽 공백 지우기
+
+'   hello    '.strip()      // 공백 지우기
+    hello
+
+s1 = 'Long live the King!'      // 문자열 교환
+s1.replace('King', 'Queen')
+    'Long live the Queen'
+
+s1.title()      // 타이틀 문자열로 변환
+    'Long Live The King!'
+
+s1.capitalize()     // 첫 문자만 대문자로 변환
+    'Long live the king!'
+
+s2 = "X:Y:Z"
+s2.split(':')       // :를 구분자로 하여 s2 문자를 리스트로 분리함
+    ['X', 'Y', 'Z']

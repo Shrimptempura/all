@@ -1,0 +1,61 @@
+<typedef>
+Syntax : typedef 정의
+    typedef unsigned char BYTE;
+    typedef : 기존 자료형인 unsigned char를 새로운 자료형 BYTE로 정의하는 것이다.
+    unsigned char : 기존의 자료형
+    BYTE : 새로운 자료형
+
+unsigned char형은 작은 정수를 저장하는데 많이 사용된다. 문자가 아니고 정수를 저장한다는
+것을 강조하기 위하여 typedef을 사용하여 unsigned char형을 BYTE라는 이름으로 다시 정의
+할 수 있다. 이렇게 정의된 BYTE라는 자료형은 기본 자료형과 똑같이 변수를 정의 사용가능하다.
+
+BYTE index;     // unsigned int index;와 같다.
+
+물론 다른 기본 자료형도 typedef을 이용하여 새로운 이름을 붙일수 있다.
+
+typedef int INT32;
+typedef short INT16;
+
+INT32 i;    // int i;와 같다.
+INT16 k;    // short k;와 같다.
+
+<구조체로 새로운 자료형 만들기>
+기존의 자료형에 새로운 이름을 붙이는 것은 별 다른 이점이 없어 보인다.
+그러나 typedef문은 상당히 복잡한 형식도 새로운 자료형으로 만들 수 있는 능력이 있다.
+
+    struct point {
+        int x;
+        int y;
+    };
+        위의 구조체를 새로운 타입으로 정의하려면 다음과 같이 typedef을 이용한다.
+
+        typedef struct point POINT;
+        struct point : 기존의 자료형
+        POINT : 새로운 자료형
+
+    즉 struct point를 새로운 타입인 POINT로 정의하는 것이다.
+    지금부터는 POINT라는 새로운 자료형이 생성된 것이므로 앞에 struct를 붙일 필요가 없다.
+    즉 point 구조체 변수를 생성하려면 다음과 같이 한다.
+
+    POINT a, b;
+
+    여기서 구조체의 선언과 typedef을 같이 사용할 수 도 있다.
+    typedef struct point {      // 구조체를 새로운 자료형 POINT로 정의
+        int x;
+        int y;
+    } POINT;
+
+    추가적인 예로 복소수(complex number)를 새로운 타입으로 선언하여 보면 다음과 같다.
+    typedef struct complex {
+        double real;
+        double imag;
+    } COMPLEX;
+    COMPLEX x, y;
+
+    BOOL 새로운 자료형 정의
+    typedef enum {FALSE, TRUE} BOOL;
+    BOOL condition;     // enum {FALSE, TURE} condition;
+
+    STRING_PTR 자료형
+    typedef char * STRING_PTR;
+    STRING_PTR p;       // char *p;

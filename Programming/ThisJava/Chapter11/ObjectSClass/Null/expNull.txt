@@ -1,0 +1,16 @@
+<널 여부 조사(isNull(), nonNull(), requireNonNull())>
+Objects.isNull(Object obj)는 매개값이 null일 경우 true를 리턴한다. 
+반대로 nonNull(Object obj)는 매개값이 not null일 경우 true를 리턴한다.
+requireNonNull()는 다음 세 가지로 오버로딩되어있다.
+
+리턴타입        메소드(매개 변수)               설명
+T               requireNonNull(T obj)           not null -> obj
+                                                    null -> NullPointerException
+T               requireNonNull(T obj,           not null -> obj
+                    String message)                 null -> NullPointerException
+T               requireNonNull(T obj,           not null -> obj
+                    Supplier<String> msg Supplier)  null -> NullPointerException(msgSupplier.get())
+
+첫 번째 매개값이 not null이면 첫 번째 매개값을 리턴하고, null이면 모두 NullPointerException을 발생시킨다.
+두 번째 매개값은 NullPointerException의 예외 메시지를 제공한다.
+                    

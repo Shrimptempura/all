@@ -1,0 +1,30 @@
+abs                 id                      str
+all                 input                   sum
+aby                 int                     super   
+ascii               isinstance              tuple   
+bin                 issubclass              type    
+bool                iter                    vars    
+bytearray           len                     zip 
+bytes               list                    _import_
+callable            lacals
+chr                 map 
+classmethod         max 
+compile             memoryview
+complex             min 
+delattr             next    
+dict                object
+dir                 oct
+divmod              open
+enumerate           ord
+eval                pow
+exec                print   
+filter              property    
+float               range   
+format              repr    
+frozenset           reversed
+getattr             round   
+globals             set 
+hasattr             setattr
+hash                slice
+help                sorted  
+hex                 staticmeethod

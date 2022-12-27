@@ -1,0 +1,53 @@
+<void 포인터>
+포인터 변수는 선언할 때 반드시 무엇을 가리키는지를 명시하여야 한다. 하지만 포인터를
+선언할 당시에는 아직 구체적으로 대상들이 정해지지 않은 경우도 있다. 이러한 경우에
+void 포인터가 사용된다. void 포인터는 순수하게 메모리의 주소만을 가지고 있는 변수이다.
+제네릭 포인터(generic pointer)라고도 불리운다.
+    void *p;
+
+이 주소를 이용해서 어떤 대상물을 가리킬 것인지는 아직 정해지지 않았다.
+따라서 void형 포인터에는 *연산자를 사용할 수 없다. 그 이유는 가리키는 대상이
+없기 때문이다. 만약 *연산자를 사용하라면 반드시 명시적인 대상을 가리키는 포인터 
+타입으로 형변환을 하여야 한다.
+
+int a = 10;
+void *p;        // void 포인터 p 선언
+
+p = &a;         // p는 변수 a의 주소를 가지고 있다.
+// printf("%d", p);는 오류이다.
+printf("%d", *(int *)p);    OK
+
+void 포인터는 어디에 유용할까? void 포인터를 이용하면 어떤 타입의 포인터도 받을 수
+있는 함수를 작성할 수 있다. 예로 전달받은 메모리를 0으로 채우는 함수를 작성했다.
+
+void memzero(void *ptr, size_t len)
+{
+    char *p = ptr;
+    for (; len  0; len--)
+        *p++ = 0;
+}
+    memzero() 함수는 void 포인터를 받아서 이것을 문자형 포인터로 형변환한 후에 
+    포인터가 가리키는 곳에 0을 저장한다.
+
+// vp.c
+#include <stdio.h>
+void memzero(void *ptr, size_t len)
+{
+    char *p = ptr;
+    for (; len > 0; len--)
+        *p++ = 0;
+}
+
+int main(void)
+{
+    char a[10];
+    memzero(a, sizeof(a));
+
+    int b[10];
+    memzero(b, sizeof(b));
+
+    double c[10];
+    memzero(c, sizeof(c));
+
+    return 0;
+}

@@ -1,0 +1,47 @@
+<하나의 배열로 객체 관리>
+이전 예제에선 Car 클래스에 4개의 타이어 객체를 4개의 필드로 각각 저장했다.
+동일한 타입의 값들은 배열로 관리하는 것이 유리하지 않을까?
+-> 타이어 객체들도 타이어 배열로 관리하는 것이 코드가 깔끔할 것이다.
+
+(before)
+    class Car {
+        Tire frontLeftTire = new Tire("앞왼쪽", 6);
+        Tire frontRightTire = new Tire("앞오른쪽", 2);
+        Tire backLeftTire = new Tire("뒤왼쪽", 3);
+        Tire backRightTire = new Tire("뒤오른쪽", 4);
+    }
+
+(after)
+    class Car {
+        Tire[] tires = {
+            new Tire("앞왼쪽", 6);
+            new Tire("앞오른쪽", 2);
+            new Tire("뒤왼쪽", 3);
+            new Tire("뒤오른쪽", 4);
+        }
+    }
+
+frontLeftTire는 tires[0], frontRightTire는 tires[1], backLeftTire는 tires[2], ...
+같이 인덱스로 표현되므로 대입이나 제어문에서 활용하기가 쉽다.
+
+예를 들어 인덱스 1을 이용해서 앞오른쪽 타이어를 KumhoTire로 교체하기 위해 다음과 같다
+    tires[1] = new KumhoTire("앞오른쪽", 13);
+
+tires 배열의 각 항목은 Tire 타입이므로 자식 객체인 KumhoTire를 대입하면
+자동 타입 변환이 발생하기 때문에 아무런 문제가 없다.
+
+배열의 타입은 Tire이지만 실제 저장 항목이 Tire의 자식 객체라면 모두 가능하다.
+상속 관계에 있는 객체들을 배열로 관리하면 제어문에서 가장 큰 혜택을 본다.
+
+전체 타이어의 roll() 메소드를 호출하는 Car 클래스의 run() 메소드는 다음과 같이 for문이 된다
+
+    int run() {
+        System.out.println("[자동차가 달립니다.]");
+        for (int i = 0; i < tires.length; i++) {
+            if (tires[i].roll() == false) {
+                stop();
+                return (i + 1);
+            }
+        }
+        return 0;
+    }

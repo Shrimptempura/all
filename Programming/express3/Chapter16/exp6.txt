@@ -1,0 +1,61 @@
+실수로 헤더 파일이 중복하여 소스 파일에 포함되면 예기치 못한 컴파일 오류가 발생한다.
+예로 구조체 정의가 들어 있는 헤더 파일을 소스 파일에 2번 포함시키면 컴파일 오류발생
+    이것을 막기 위해 #ifndef 지시어를 사용할 수 있다. 
+
+#ifndef STDUENT_H   // STDUENT_H가 정의되지 않았다면
+#define STDUENT_H   // STDUENT_H를 정의해라
+
+<비트 필드>
+0과 1로 표현 가능한 구조체
+
+비트 필드 구조체는 구조체의 일종으로서 멤버들의 크기가 비트 단위로 나누어져 있는
+구조체를 의미한다. 즉 비트들을 멤버로 가지는 구조체이다. 비트 필드를 사용하면
+꼭 필요한 만큼의 비트만을 사용할 수 있어서 메모리를 효율적으로 사용하는 것이 가능하다.
+
+// 간단한 상품 정보 저장하는 비트 필드 구조체
+struct product {
+    unsigned style : 3;
+    unsigned size : 2;
+    unsigned color : 1;
+};
+    product 구조체에는 3개의 비트 필드가 정의되어 있다. 이들을 3, 2, 1 비트로 되어있으며
+    비트 필드의 크기는 멤버 이름 다음에 콜론(:)울 사용하여 나타낸다.
+    여기서 주의점)
+    "unsigned style : 3;" 이라는 문장은 unsigned가 3개 있다는 뜻이 아닌
+    unsigned 중에서 3개의 비트만을 사용하다는 것을 나타낸다.
+    이 비트 필드의 크기를 나타내는 숫자는 0에서 unsigned 자료형이 가지는 비트수
+    사이의 값이어야 한다.
+
+    style 멤버는 3비트로 정의되었으므로 0부터 7까지의 값을 가질 수 있다.
+    size 멤버는 2비트로 0에서 3까지의 값을 가질 수 있고
+    color 멤버는 1비트 이므로 0 아니면 1값을 가질 수 있다.
+
+    따라서  만약 각 멤버가 가질 수 있는 값의 범위가 부족하면 비트의 수를 늘려야 한다.
+    비트 필드는 선언된 순서대로 unsigned 자료형 안에 하위비트에서부터 순차적으로 저장
+    된다.  color - size - style
+
+// bit_filed.c          비트 필드 구조체
+#include <stdio.h>
+
+struct product {   
+    unsigned style : 3;
+    unsigned size : 2;
+    unsigned color : 1;
+};
+
+int main(void)
+{
+    struct product p1;
+
+    p1.style = 5;   // 비트 필드 이용시 컴파일러 자동 수행
+    p1.size = 3;
+    p1.color = 1;
+
+    printf("style = %d size = %d color = %d\n", p1.style, p1.size, p1.color);
+    printf("sizeof(p1) = %d\n", sizeof(p1));
+    printf("p1 = %x\n", p1);
+// 비트 필드 구조체를 16진수로 출력시 앞의 3바이트는 쓰레기 값이 들어가 있다.
+// 지역변수라서 초기화가 안되었기 때문, 마지막 1바이트는 우리가 대입한 대로 되어 있음
+
+    return 0;
+}

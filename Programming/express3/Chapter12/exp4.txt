@@ -1,0 +1,69 @@
+<문자열 처리 라이브러리 함수>
+- 문자열 함수들은 string.h 필요
+
+strlen(s) : 문자열 s의 길이를 구한다.
+strcpy(s1, s2) : s2를 s1에 복사한다.
+strcat(s1, s2) : s2를 s1의 끝에 붙여넣는다.
+strcmp(s1, s2) : s1과 s2를 비교한다.
+strncpy(s1, s2, n) : s2의 최대 n개의 문자를 s1에 복사한다.
+strncat(s1, s2, n) : s2의 최대 n개의 문자를 s1의 끝에 붙여 넣는다.
+strncmp(s1, s2, n) : 최대 n개의 문자까지 s1과 s2를 비교한다.
+strchr(s, c) : 문자열 s안에서 문자 c를 찾는다.
+strstr(s1, s2) : 문자열 s1에서 문자열 s2를 찾는다.
+char *strtok(s, delimit); : 문자열 s를 delimit를 이용하여 토큰으로 분리한다.
+
+<문자열 길이>
+- 문자열 길이 계산 함수 strlen();
+    : 매개 변수 선언에서 const는 매개 변수를 통하여 원본은 변경하지 않는다는 의미이다.
+      문자 배열은 언제든지 포인터로 받을 수 있다. <따라서> strlen()의 매개 변수는 
+      문자형 포인터로 선언되었다.
+
+<문자열 복사>
+- Syntax : strcpy();
+    char dst[6];
+    char str[6] = "Hello";
+    strcpy(dst, src);       // src를 dst로 복사한다.
+
+    strcpy()는 src가 가리키는 문자열을 dst가 가리키는 배열로 복사한다. dst가 가지고
+    있었던 문자열을 덮어씌워져서 없어진다. 문자열의 복사는 한 문자씩 이루어지며
+    NULL 문자 '\0'가 나올 때까지 복사를 계속하게 된다. 
+        이때 주의점은 dst의 문자열 길이가 src의 문자열 길이보다 길거나 같아야 한다.
+
+    strncpy(); 복사할 문자의 개수 제한하기, strncpy();은 복사되는 문자의 개수가
+    인수로 주어지는 n을 넘을 수 없다. 만약 src 문자열의 길이가 n보다 작으면 전체
+    src 문자열이 복사 된다.
+        strncpy(dst, "Hello", 3);       // "Hel" 만 복사된다.
+
+<문자열 연결>
+- Syntax : strcat();
+    char dst[12] = "Hello";
+    char src[6] = "World";
+    strcat(dst, src);       // dst가 "HelloWorld"가 된다.
+
+    윗 코드는 dst 문자열 뒤에 src 문자열을 연결한다. strcat()은 src를 dst의 끝에 붙이고
+    전체 문자열을 NULL 문자로 종료한다.
+
+    만약 dst 배열에 src를 연결할 충분한 공간이 없다면 문제가 발생한다.
+    이러한 문제를 방지하려면 strncat() 함수를 사용해야 한다.
+        char dst[12] = "Hello";
+        char src[6] = "World";
+        strncat(dst, src, 3);       // dst가 "HelloWor"가 된다.
+
+<문자열 비교>
+    두 개의 문자열을 비교하는데 사용, strcmp()는 사전적인 순서로 두 개의 문자열을
+    비교 한다.
+- Syntax : strcmp();
+    int result = strcmp("dog", "dog");      // 0이 반환
+
+    strcmp()는 주로 2개의 문자열이 같은지를 검사하는데 사용된다. 주의할 점은 2개의
+    문자열이 같으면 1이 아닌, 0이 반환
+        < 0 : s1이 s2보다 앞에 있다.
+        0 : s1 == s2
+        > 0 : s1이 s2보다 뒤에 있다.
+
+    strcmp()는 문자열을 구성하는 문자들의 아스키 코드 값을 차례대로 비교한다.
+    만약 두 문자의 코드 값이 같다면 계속하여서 다음 문자들을 비교한다.
+    만약 코드 값이 다르다면 s1의 문자가 s2의 문자보다 작으면 양수를, 크면 음수 반환한다.
+    문자열이 끝날 때까지 모든 문자들이 일치하면 0을 반환한다.
+
+    만약 최대 n 문자까지만 비교를 하고 싶으면 strncmp() 함수를 사용한다.

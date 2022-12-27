@@ -1,0 +1,52 @@
+# 파이썬의 return문은 c/c++ java와 달리 하나 이상의 값을 반환할 수 있다.
+def get_root(a, b, c):
+    r1 = (-b + (b ** 2 - 4 * a * c) ** 0.5) / (2 * a)
+    r2 = (-b - (b ** 2 - 4 * a * c) ** 0.5) / (2 * a)
+    return r1, r2
+
+result1, result2 = get_root(1, 2, -8)
+print('해는 {} 또는 {}이다 .'.format(result1, result2))
+
+<전역변수 지역변수>
+지역변수 = 함수안에서 만들어진 변수
+전역변수 = 함수밖에서 만들어진 변수
+
+지역변수는 함수가 호출되면 만들어짐 -> 함수의 실행이 끝날때 사라짐
+전역변수는 함수와 상관없이 존재..(global)
+
+# 디폴트 매개변수는 전체 변수에 대해 모두 할당하거나, 매개변수의 출현 순서상
+# 뒤에 있는 변수부터 할당해야 한다.
+
+# 가변 인자를 가지는 함수의 정의와 호출
+def great(*names):
+    for name in names:
+        print('안녕하세요', name, '씨')
+
+great('홍길동', '양만춘', '이순신')
+great('Tom', 'Jerry')
+
+=========================
+<피보나치 재귀적>
+# factorial_recursion.py        재귀함수를 이용해 정의한 피보나치 수열
+from termios import FF0, FF1
+
+
+def fibonacci(n):
+    if (n <= 1):
+        return n
+    else:
+        return (fibonacci(n - 1) + fibonacci(n - 2))    # F_n = F_(n - 1) + F_(n - 2)
+    
+nterms = int(input('몇 개의 피보나치수를 원하세요? '))
+
+# 음수일 경우 피보나치 수를 구할 수 없음 
+if (nterms <= 0):
+    print('오류 : 양수를 입력하세요.')
+else:
+    print('Fibonacci 수열: ', end = ' ')
+    for i in range(nterms):
+        print(fibonacci(i), end = ' ')
+        
+
+# 재귀함수는 코드를 직관적이고 간결하나 위의 fibonacci() 함수는
+# 트리형식으로 재귀적 호출이 매우 비효율적

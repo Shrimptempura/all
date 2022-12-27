@@ -1,0 +1,25 @@
+문자 처리 라이브러리
+<ctype.h> 필요
+
+-> 주로 영문 알파벳인지 숫자인지 대문자인지 소문자인지..
+    참이면 '0'이 아닌 값이 반환, 거짓이면 '0'반환
+    인수는 int형 선언, 반환값도 int형
+
+isalpha(c) : c가 영문자인가?
+isupper(c) : c가 대문자인가?
+islower(c) : c가 소문자인가?
+isdigit(c) : c가 숫자인가?
+isalnum(c) : c가 영문자이나 숫자인가?
+isxdigit(c) : c가 16진수의 숫자인가?
+isspace(c) : c가 공백분자인가?(' ', '\n', '\t', '\v', '\r')
+ispunct(c) : c가 구두점 문자인가?
+isprint(c) : c가 출력 가능한 문자인가?
+iscntrl(c) : c가 제어 문자인가?
+isascii(c) : c가 아스키 코드인가?
+
+문자를 변환하는 함수 이름
+to..()
+
+toupper(c) : c를 대문자로 바꾼다.
+tolower(c) : c를 소문자로 바꾼다.
+toascii(c) : c를 아스키 코드로 바꾼다.

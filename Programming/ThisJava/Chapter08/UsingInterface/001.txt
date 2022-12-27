@@ -1,0 +1,35 @@
+<인터페이스 사용>
+인터페이스로 구현 객체를 사용하려면 다음과 같이 인터페이스 변수를 선언하고 구현 객체를 대입해야 한다.
+
+인터페이스 변수는 참조 타입이기 때문에 구현 객체가 대입될 경우 구현 객체의 번지를 저장한다.
+
+    인터페이스 변수;            |   인터페이스 변수 = 구현객체;
+    변수 = 구현객체;
+
+예를 들어 RemoteControl 인터페이스로 구현 객체인 Television과 Audio를 사용하려면 다음과 같이
+RemoteControl 타입 변수 rc를 선언하고 구현 객체를 대입해야 한다.
+
+    RemoteControl rc;
+    rc = new Television();
+    rc = new Audio();
+
+개별 코드에서 인터페이스는 클래스의 필드, 생성자 또는 메소드의 매개 변수, 생성자 또는 메소드의 
+로컬 변수로 선언될 수 있다.
+
+    public class MyClass {
+        // field
+        RemoteControl rc = new Television();
+
+        // constructor
+        MyClass('RemoteControl rc') {     // : MyClass mc = new MyClass('new Television()');
+            this.rc = rc;
+        }
+
+        // method
+        void methodA() {
+            // local constant : 지역 변수
+            RemoteControl rc = new Audio();
+        }
+
+        void methodB('RemoteControl rc') { ... }    // : mc.methodB('new Audio()');
+    }

@@ -1,0 +1,77 @@
+<구조체를 함수의 인수로 넘기는 방법>
+구조체를 함수의 인수로 넘기는 경우, 다른 기본 자료형을 넘길 때와 별반 다르지 않다.
+즉 구조체의 복사본이 함수로 전달되게 된다. <따라서> 만약 구조체의 크기가 크면 그만큼
+시간과 메모리가 소요된다.
+
+- 두 명의 학생들의 데이터를 받아서 학번이 같으면 동일 학생 판단 함수, 구조체 함수로 전달
+int equal (struct student s1, struct student s2)
+{
+    if (s1.number == s2.number)
+        return 1;
+    else
+        return 0;
+}
+
+int main(void)
+{
+    struct student a = {1, "hong", 3.8};
+    struct student b = {2, "kim", 4.0};
+    if (equal(a, b) == 1)
+        printf("같은 학생\n");
+    else
+        printf("다른 학생\n");
+}
+-------------------------------------------------------------------------------
+        int equal (struct student *p1, struct student *p2)
+        {
+            if (p1 -> number == p2 -> number)
+                return 1;
+            else
+                return 0;
+        }
+
+        int main(void)
+        {
+            struct student a = {1, "hong", 3.8};
+            struct student b = {2, "kim", 4.0};
+            if (equal(&a, &b) == 1)
+                printf("같은 학생\n");
+            else
+                printf("다른 학생\n");
+        }
+
+포인터를 잘못 사용하게 되면 원본 데이터를 훼손할 수도 있다. 앞에서 구조체를 직접
+보내는 방식에서는 복사본이기 때문에 아무리 변경하여도 원본에 영향을 주지는 않았다.
+    이점을 방지하려면 한가지 방법이 있다.
+    원본을 포인터를 통하여 읽기만 하고 쓸 필요는 없는 경우, 매개변수를 정의할 때
+    다음과 같이 const 키워드를 써주면 된다. const 키워드가 *p1앞에 있으면 이 포인터가
+    가리키는 구조체의 값을 변경하려고 하면 컴파일 과정에서 오류 메시지가 출력한다.
+
+int equal (struct student const *p1, struct student const *p2)
+{
+    if (p1 -> number == p2 -> number)
+        return 1;
+    else
+        return 0;
+}
+
+<구조체를 함수의 반환값으로 넘기는 방법>
+함수가 구조체를 반한할 때도 원본이 아닌 복사본이 전달된다. 반환값으로 구조체를 사용하면
+한번에 여러 개의 값을 반환할 수 있다.
+
+struct student creat()
+{
+    struct student s;
+    s.number = 3;
+    strcpy(s.name, "park");
+    s.grade = 4.0;
+    return s;       // 구조체 s가 구조체 a로 복사된다.
+}
+
+int main(void)
+{
+    struct student a;
+    a = create();       // 구조체 s가 구조체 a로 복사된다.
+
+    return 0;
+}

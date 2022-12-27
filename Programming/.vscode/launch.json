@@ -1,0 +1,1484 @@
+{
+    // IntelliSense를 사용하여 가능한 특성에 대해 알아보세요.
+    // 기존 특성에 대한 설명을 보려면 가리킵니다.
+    // 자세한 내용을 보려면 https://go.microsoft.com/fwlink/?linkid=830387을(를) 방문하세요.
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch test",
+            "request": "launch",
+            "mainClass": "mytest.test",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch ValueCompareExample",
+            "request": "launch",
+            "mainClass": "Chapter11.WrapperClass.ValueCompare.ValueCompareExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch StringToPrimitiveValueExample",
+            "request": "launch",
+            "mainClass": "Chapter11.WrapperClass.StringToPrimitiveValue.StringToPrimitiveValueExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch AutoBoxingUnBoxingExample",
+            "request": "launch",
+            "mainClass": "Chapter11.WrapperClass.AutoBoxing.AutoBoxingUnBoxingExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch BoxingUnBoxingExample",
+            "request": "launch",
+            "mainClass": "Chapter11.WrapperClass.BoxingUnboxing.BoxingUnBoxingExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch SearchExample",
+            "request": "launch",
+            "mainClass": "Chapter11.ArraysClass.ArraySortMet.SearchExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch SortEaxmple",
+            "request": "launch",
+            "mainClass": "Chapter11.ArraysClass.ArraySortMet.SortEaxmple",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch EqualsEaxmple",
+            "request": "launch",
+            "mainClass": "Chapter11.ArraysClass.EqualsEaxmple",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch ArrayCopyExample",
+            "request": "launch",
+            "mainClass": "Chapter11.ArraysClass.ArrayCopyExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch PatternExample",
+            "request": "launch",
+            "mainClass": "Chapter11.RegulardNPatternClass.PatternExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch StringBuilderExmaple",
+            "request": "launch",
+            "mainClass": "Chapter11.StringClass.StringBufferNBuilderClass.StringBuilderExmaple",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch StringTokenizerExample",
+            "request": "launch",
+            "mainClass": "Chapter11.StringClass.StringTokenizerClass.StringTokenizer.StringTokenizerExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch StringSplitExample",
+            "request": "launch",
+            "mainClass": "Chapter11.StringClass.StringTokenizerClass.Split.StringSplitExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch StringValueOfExample",
+            "request": "launch",
+            "mainClass": "Chapter11.StringClass.StringMethod.ValueOf.StringValueOfExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch StringTrimExample",
+            "request": "launch",
+            "mainClass": "Chapter11.StringClass.StringMethod.Trim.StringTrimExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch StringToLowerUpperCaseExample",
+            "request": "launch",
+            "mainClass": "Chapter11.StringClass.StringMethod.ToLowerCaseNUpper.StringToLowerUpperCaseExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch StringSubstringExample",
+            "request": "launch",
+            "mainClass": "Chapter11.StringClass.StringMethod.Substring.StringSubstringExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch StringReplaceExample",
+            "request": "launch",
+            "mainClass": "Chapter11.StringClass.StringMethod.Replace.StringReplaceExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch StringLengthExample",
+            "request": "launch",
+            "mainClass": "Chapter11.StringClass.StringMethod.Length.StringLengthExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch StringIndexOfExample",
+            "request": "launch",
+            "mainClass": "Chapter11.StringClass.StringMethod.IndexOf.StringIndexOfExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch StringGetBytesExample",
+            "request": "launch",
+            "mainClass": "Chapter11.StringClass.StringMethod.GetBytes.StringGetBytesExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch StringEqualsExample",
+            "request": "launch",
+            "mainClass": "Chapter11.StringClass.StringMethod.Equals.StringEqualsExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch StringCharAtExample",
+            "request": "launch",
+            "mainClass": "Chapter11.StringClass.StringMethod.CharAt.StringCharAtExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch KeyboardToStringExample",
+            "request": "launch",
+            "mainClass": "Chapter11.StringClass.StringConstructor.KeyboardToStringExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch ByteToStringExample",
+            "request": "launch",
+            "mainClass": "Chapter11.StringClass.StringConstructor.ByteToStringExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch NewInstanceExample",
+            "request": "launch",
+            "mainClass": "Chapter11.ClassClass.NewInstance.NewInstanceExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch ReflectionExample",
+            "request": "launch",
+            "mainClass": "Chapter11.ClassClass.Reflection.ReflectionExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch ClassExample",
+            "request": "launch",
+            "mainClass": "Chapter11.ClassClass.GetClassNForName.ClassExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch SystemEnvExample",
+            "request": "launch",
+            "mainClass": "Chapter11.SystemClass.Getenv.SystemEnvExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch GetPropertyExample",
+            "request": "launch",
+            "mainClass": "Chapter11.SystemClass.GetProperty.GetPropertyExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch SystemTimeExample",
+            "request": "launch",
+            "mainClass": "Chapter11.SystemClass.CurrentTimeMillisNnanoTime.SystemTimeExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch GcExample",
+            "request": "launch",
+            "mainClass": "Chapter11.SystemClass.Gc.GcExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch ExitExample",
+            "request": "launch",
+            "mainClass": "Chapter11.SystemClass.Exit.ExitExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch ToStringExample",
+            "request": "launch",
+            "mainClass": "Chapter11.ObjectSClass.toString.ToStringExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch NullExample",
+            "request": "launch",
+            "mainClass": "Chapter11.ObjectSClass.Null.NullExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch HashCodeExample",
+            "request": "launch",
+            "mainClass": "Chapter11.ObjectSClass.HashNhashCode.HashCodeExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch EqualsAndDeepEqualsExample",
+            "request": "launch",
+            "mainClass": "Chapter11.ObjectSClass.EqualsNdeepEquals.EqualsAndDeepEqualsExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch CompareExample",
+            "request": "launch",
+            "mainClass": "Chapter11.ObjectSClass.Compare.CompareExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch FinalizeExample",
+            "request": "launch",
+            "mainClass": "Chapter11.ObjectClass.Finalize.FinalizeExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch MemberExample",
+            "request": "launch",
+            "mainClass": "Chapter11.ObjectClass.Clone.DeepClone.MemberExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch MemberExample",
+            "request": "launch",
+            "mainClass": "Chapter11.ObjectClass.Clone.ThinClone.MemberExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch SmartPhoneExample",
+            "request": "launch",
+            "mainClass": "Chapter11.ObjectClass.toString.SmartPhoneExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch ToStringExample",
+            "request": "launch",
+            "mainClass": "Chapter11.ObjectClass.toString.ToStringExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch KeyExample",
+            "request": "launch",
+            "mainClass": "Chapter11.ObjectClass.HashCode.KeyExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch MemberExample",
+            "request": "launch",
+            "mainClass": "Chapter11.ObjectClass.Equals.MemberExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch LoginExample",
+            "request": "launch",
+            "mainClass": "Chapter10.Practice.LoginExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch TryCatchFinallyExample",
+            "request": "launch",
+            "mainClass": "Chapter10.Practice.TryCatchFinallyExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch AcountExample",
+            "request": "launch",
+            "mainClass": "Chapter10.UserDefineException.AcountExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch Example",
+            "request": "launch",
+            "mainClass": "Chapter10.ExceptionThrows.Example",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch ThrowsExample",
+            "request": "launch",
+            "mainClass": "Chapter10.ExceptionThrows.ThrowsExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch TryWithResourceExample",
+            "request": "launch",
+            "mainClass": "Chapter10.AutomaticResourceClosing.TryWithResourceExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch CatchByExceptionKindExample",
+            "request": "launch",
+            "mainClass": "Chapter10.ProcessingCodeExceptionType.CatchKind.CatchByExceptionKindExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch TryCatchFinallyRuntimeExceptionExample",
+            "request": "launch",
+            "mainClass": "Chapter10.ExceptionHandlingCode.TryCatchFinallyRuntimeExceptionExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch TryCatchFinallyExample",
+            "request": "launch",
+            "mainClass": "Chapter10.ExceptionHandlingCode.TryCatchFinallyExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch ClassCastExceptionExample",
+            "request": "launch",
+            "mainClass": "Chapter10.ExecutionException.ClassCastException.ClassCastExceptionExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch NumberFormatExceptionExample",
+            "request": "launch",
+            "mainClass": "Chapter10.ExecutionException.NumberFormatException.NumberFormatExceptionExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch ArrayIndexOutOfBoundExceoptionExample2",
+            "request": "launch",
+            "mainClass": "Chapter10.ExecutionException.ArrayIndexOutOfBoundsException.ArrayIndexOutOfBoundExceoptionExample2",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch ArrayIndexOutOfBoundExceoptionExample",
+            "request": "launch",
+            "mainClass": "Chapter10.ExecutionException.ArrayIndexOutOfBoundsException.ArrayIndexOutOfBoundExceoptionExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch AnonymousExample",
+            "request": "launch",
+            "mainClass": "Chapter09.Practice.P005.AnonymousExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch AnonymousExample",
+            "request": "launch",
+            "mainClass": "Chapter09.AnonyObjsLocalVariable.AnonymousExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main",
+            "request": "launch",
+            "mainClass": "Chapter09.AnonymousObject.AnonyImpleObject.Main",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch ButtonExample",
+            "request": "launch",
+            "mainClass": "Chapter09.NestedInterface.ButtonExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch OutterExample",
+            "request": "launch",
+            "mainClass": "Chapter09.NestedClassOutterReference.OutterExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main",
+            "request": "launch",
+            "mainClass": "Chapter09.NestedClass.Main",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch ActionExample",
+            "request": "launch",
+            "mainClass": "Chapter08.Practice.P005.ActionExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch DaoExample",
+            "request": "launch",
+            "mainClass": "Chapter08.Practice.P004.DaoExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch SoundableExample",
+            "request": "launch",
+            "mainClass": "Chapter08.Practice.P003.SoundableExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch DefaultMethodExample",
+            "request": "launch",
+            "mainClass": "Chapter08.DefaultMethodInterfExten.DefaultMethodExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch Example",
+            "request": "launch",
+            "mainClass": "Chapter08.InterfaceInheritance.Example",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch VehicleExample",
+            "request": "launch",
+            "mainClass": "Chapter08.ForcedTypeCasting.VehicleExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch DriverExample",
+            "request": "launch",
+            "mainClass": "Chapter08.ParameterPolymorphism.DriverExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch CarExample",
+            "request": "launch",
+            "mainClass": "Chapter08.InterfaceArray.CarExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch RemoteControlExample",
+            "request": "launch",
+            "mainClass": "Chapter08.UsingInterface.DefaultMethod.RemoteControlExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch CarExample",
+            "request": "launch",
+            "mainClass": "Chapter08.TypePromotionPolymorphism.FieldPolymorphism.CarExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch RemoteControlExample",
+            "request": "launch",
+            "mainClass": "Chapter08.UsingInterface.StaticMethod.RemoteControlExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch RemoteControlExample",
+            "request": "launch",
+            "mainClass": "Chapter08.UsingInterface.AbstractMethod.RemoteControlExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch RemoteControlExample",
+            "request": "launch",
+            "mainClass": "Chapter08.MultInterfaceImpleClass.RemoteControlExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch RemoteControlExample",
+            "request": "launch",
+            "mainClass": "Chapter08.AnonyImplementObject.RemoteControlExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch RemoteControlExample",
+            "request": "launch",
+            "mainClass": "Chapter08.AnonymousImplementationObjects.RemoteControlExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch RemoteControlExmaple",
+            "request": "launch",
+            "mainClass": "Chapter08.ImplementClass.RemoteControlExmaple",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch ChildExample",
+            "request": "launch",
+            "mainClass": "Chapter07.Pratice.P006.ChildExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch AnimalExample",
+            "request": "launch",
+            "mainClass": "Chapter07.AbstractMethod.AnimalExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch InstanceofExample",
+            "request": "launch",
+            "mainClass": "Chapter07.ObjectTypeInstanceof.InstanceofExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch ChildExample",
+            "request": "launch",
+            "mainClass": "Chapter07.ForcedTypeCasting.ChildExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch DriverExample",
+            "request": "launch",
+            "mainClass": "Chapter07.PolymorphismOfParameters.DriverExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch CarRenewExample",
+            "request": "launch",
+            "mainClass": "Chapter07.FeildPolymorphism.CarRenewExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch CarExample",
+            "request": "launch",
+            "mainClass": "Chapter07.FeildPolymorphism.CarExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch SupersonicAirplaneExmaple",
+            "request": "launch",
+            "mainClass": "Chapter07.Super.SupersonicAirplaneExmaple",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch ComputerExample",
+            "request": "launch",
+            "mainClass": "Chapter07.MethodRedefinition.ComputerExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch StudentExmaple",
+            "request": "launch",
+            "mainClass": "Chapter07.ParentConstructor.StudentExmaple",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch DmbCellPhoneExample",
+            "request": "launch",
+            "mainClass": "Chapter07.ClassInheritance.DmbCellPhoneExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch BankApplication",
+            "request": "launch",
+            "mainClass": "Chapter06.Pratice.NumberOf20.BankApplication",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch AccountExample",
+            "request": "launch",
+            "mainClass": "Chapter06.Pratice.NumberOf19.AccountExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch ShopServiceExample",
+            "request": "launch",
+            "mainClass": "Chapter06.Pratice.NumberOf18.ShopServiceExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch PrinterExample",
+            "request": "launch",
+            "mainClass": "Chapter06.Pratice.NumberOf17.PrinterExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch PrinterExample",
+            "request": "launch",
+            "mainClass": "Chapter06.Pratice.NumberOf16.PrinterExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch MemberServiceExample",
+            "request": "launch",
+            "mainClass": "Chapter06.Pratice.NumberOf15.MemberServiceExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch PrintAnnotationExample",
+            "request": "launch",
+            "mainClass": "Chapter06.annoation.PrintAnnotationExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch CarExample",
+            "request": "launch",
+            "mainClass": "Chapter06.getter_setter.CarExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch A",
+            "request": "launch",
+            "mainClass": "Chapter06.field_method_access.package1.A",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch Application",
+            "request": "launch",
+            "mainClass": "Chapter06.Temp.Application",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch Application",
+            "request": "launch",
+            "mainClass": "Chapter06.Import.Application",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch EarthExample",
+            "request": "launch",
+            "mainClass": "Chapter06.StaticFinal.EarthExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch PersonExample",
+            "request": "launch",
+            "mainClass": "Chapter06.PersonExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch SingletonExample",
+            "request": "launch",
+            "mainClass": "Chapter06.SingletonExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch TelevisionExample",
+            "request": "launch",
+            "mainClass": "Chapter06.StaticInitialization.TelevisionExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch CalculatorExample",
+            "request": "launch",
+            "mainClass": "Chapter06.StaticMember.CalculatorExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch CarExample",
+            "request": "launch",
+            "mainClass": "Chapter06.InstanceThis.CarExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch CalculatorExample",
+            "request": "launch",
+            "mainClass": "Chapter06.MethodOL.CalculatorExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch CarExample",
+            "request": "launch",
+            "mainClass": "Chapter06.CarExternal.CarExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch CalculatorExample",
+            "request": "launch",
+            "mainClass": "Chapter06.CalculatorInternal.CalculatorExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch CarExample",
+            "request": "launch",
+            "mainClass": "Chapter06.CarReturn.CarExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch ComputerExample",
+            "request": "launch",
+            "mainClass": "Chapter06.ComputerExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch CalculatorExample",
+            "request": "launch",
+            "mainClass": "Chapter06.CalculatorExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch CarExample",
+            "request": "launch",
+            "mainClass": "Chapter06.CarConstructorOL.CarExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch KoreanExample",
+            "request": "launch",
+            "mainClass": "Chapter06.KoreanExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch CarExplicitExample",
+            "request": "launch",
+            "mainClass": "Chapter06.CarExplicitExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch FieldInitValueExample",
+            "request": "launch",
+            "mainClass": "Chapter06.FieldInitValueExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch CarExample",
+            "request": "launch",
+            "mainClass": "Chapter06.CarExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch StudentExample",
+            "request": "launch",
+            "mainClass": "Chapter06.StudentExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch Exercise09",
+            "request": "launch",
+            "mainClass": "Chapter05.Exercise09",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch Excercise07",
+            "request": "launch",
+            "mainClass": "Chapter05.Excercise07",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch Exercise08",
+            "request": "launch",
+            "mainClass": "Chapter05.Exercise08",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch EnumMethod",
+            "request": "launch",
+            "mainClass": "Chapter05.EnumMethod",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch EnumWeek",
+            "request": "launch",
+            "mainClass": "Chapter05.EnumWeek",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch AdvancedFor",
+            "request": "launch",
+            "mainClass": "Chapter05.AdvancedFor",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch ArrayCopy",
+            "request": "launch",
+            "mainClass": "Chapter05.ArrayCopy",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch ArrayCopyByFor",
+            "request": "launch",
+            "mainClass": "Chapter05.ArrayCopyByFor",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch ArrayReferenceObject",
+            "request": "launch",
+            "mainClass": "Chapter05.ArrayReferenceObject",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch ArrayInArray",
+            "request": "launch",
+            "mainClass": "Chapter05.ArrayInArray",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch MainStringArrayArgument",
+            "request": "launch",
+            "mainClass": "Chapter05.MainStringArrayArgument",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch ArrayLength",
+            "request": "launch",
+            "mainClass": "Chapter05.ArrayLength",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch ArrayCreateByNew",
+            "request": "launch",
+            "mainClass": "Chapter05.ArrayCreateByNew",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch ArrayCreateByValueList2",
+            "request": "launch",
+            "mainClass": "Chapter05.ArrayCreateByValueList2",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch ArrayCreateByValueList",
+            "request": "launch",
+            "mainClass": "Chapter05.ArrayCreateByValueList",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch StringEquals",
+            "request": "launch",
+            "mainClass": "Chapter05.StringEquals",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch Exercise07",
+            "request": "launch",
+            "mainClass": "Chapter04.Exercise07",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch test",
+            "request": "launch",
+            "mainClass": "Chapter04.test",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch Exercise06",
+            "request": "launch",
+            "mainClass": "Chapter04.Exercise06",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch Excercise05",
+            "request": "launch",
+            "mainClass": "Chapter04.Excercise05",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch Excercise04",
+            "request": "launch",
+            "mainClass": "Chapter04.Excercise04",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch Excercise03",
+            "request": "launch",
+            "mainClass": "Chapter04.Excercise03",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch Continue",
+            "request": "launch",
+            "mainClass": "Chapter04.Continue",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch BreakOutter",
+            "request": "launch",
+            "mainClass": "Chapter04.BreakOutter",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch Break",
+            "request": "launch",
+            "mainClass": "Chapter04.Break",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch DoWhile",
+            "request": "launch",
+            "mainClass": "Chapter04.DoWhile",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch WhileKeyControl",
+            "request": "launch",
+            "mainClass": "Chapter04.WhileKeyControl",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch WhileSumFrom1To100",
+            "request": "launch",
+            "mainClass": "Chapter04.WhileSumFrom1To100",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch ForFloatCounterExample",
+            "request": "launch",
+            "mainClass": "Chapter04.ForFloatCounterExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch WhilePrintFrom1To10",
+            "request": "launch",
+            "mainClass": "Chapter04.WhilePrintFrom1To10",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch ForMultiplicationTableExample",
+            "request": "launch",
+            "mainClass": "Chapter04.ForMultiplicationTableExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch ForSumFrom1To100Example2",
+            "request": "launch",
+            "mainClass": "Chapter04.ForSumFrom1To100Example2",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch ForSumFrom1To100Example",
+            "request": "launch",
+            "mainClass": "Chapter04.ForSumFrom1To100Example",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch ForPrintFrom1To10Example",
+            "request": "launch",
+            "mainClass": "Chapter04.ForPrintFrom1To10Example",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch SwitchStringExample",
+            "request": "launch",
+            "mainClass": "Chapter04.SwitchStringExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch SwitchCharExample",
+            "request": "launch",
+            "mainClass": "Chapter04.SwitchCharExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch SwitchNoBreakCaseExample",
+            "request": "launch",
+            "mainClass": "Chapter04.SwitchNoBreakCaseExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch SwitchExample",
+            "request": "launch",
+            "mainClass": "Chapter04.SwitchExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch IfNestedExample",
+            "request": "launch",
+            "mainClass": "Chapter04.IfNestedExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch IfDiceExample",
+            "request": "launch",
+            "mainClass": "Chapter04.IfDiceExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch IfElseIfElseExample",
+            "request": "launch",
+            "mainClass": "Chapter04.IfElseIfElseExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch IfElseExample",
+            "request": "launch",
+            "mainClass": "Chapter04.IfElseExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch IfExample",
+            "request": "launch",
+            "mainClass": "Chapter04.IfExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch Exercise08",
+            "request": "launch",
+            "mainClass": "Chapter03.Exercise08",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch Exercise07",
+            "request": "launch",
+            "mainClass": "Chapter03.Exercise07",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch Exercise06",
+            "request": "launch",
+            "mainClass": "Chapter03.Exercise06",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch Exercise05",
+            "request": "launch",
+            "mainClass": "Chapter03.Exercise05",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch Exercise04",
+            "request": "launch",
+            "mainClass": "Chapter03.Exercise04",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch Exercise03",
+            "request": "launch",
+            "mainClass": "Chapter03.Exercise03",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch Exercise02",
+            "request": "launch",
+            "mainClass": "Chapter03.Exercise02",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch ConditionalOperationExample",
+            "request": "launch",
+            "mainClass": "Chapter03.ConditionalOperationExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch AssignmentOperatorExample",
+            "request": "launch",
+            "mainClass": "Chapter03.AssignmentOperatorExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch BitShiftExample",
+            "request": "launch",
+            "mainClass": "Chapter03.BitShiftExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch BitLogicExample",
+            "request": "launch",
+            "mainClass": "Chapter03.BitLogicExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch LogicalOperatorEaxmple",
+            "request": "launch",
+            "mainClass": "Chapter03.LogicalOperatorEaxmple",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch StringEqualsExample",
+            "request": "launch",
+            "mainClass": "Chapter03.StringEqualsExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch CompareOperatorExample2",
+            "request": "launch",
+            "mainClass": "Chapter03.CompareOperatorExample2",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch InputDataCheckNaNExample2",
+            "request": "launch",
+            "mainClass": "Chapter03.InputDataCheckNaNExample2",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch InputDataCheckNaNExample1",
+            "request": "launch",
+            "mainClass": "Chapter03.InputDataCheckNaNExample1",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch InfinityAndNaNCheckExample",
+            "request": "launch",
+            "mainClass": "Chapter03.InfinityAndNaNCheckExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch AccuracyExample2",
+            "request": "launch",
+            "mainClass": "Chapter03.AccuracyExample2",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch AccuracyExample",
+            "request": "launch",
+            "mainClass": "Chapter03.AccuracyExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch CheckOverflowExample",
+            "request": "launch",
+            "mainClass": "Chapter03.CheckOverflowExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch OverflowExample",
+            "request": "launch",
+            "mainClass": "Chapter03.OverflowExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch ArithmeticOperatorExample",
+            "request": "launch",
+            "mainClass": "Chapter03.ArithmeticOperatorExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch BitReverseOperaotrExample",
+            "request": "launch",
+            "mainClass": "Chapter03.BitReverseOperaotrExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch DenyLogicOperatorExample",
+            "request": "launch",
+            "mainClass": "Chapter03.DenyLogicOperatorExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch IncreaseDecreaseOperatorExample",
+            "request": "launch",
+            "mainClass": "Chapter03.IncreaseDecreaseOperatorExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch SingOperatorExample",
+            "request": "launch",
+            "mainClass": "Chapter03.SingOperatorExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch OperationsPromotionExample",
+            "request": "launch",
+            "mainClass": "Chapter02.OperationsPromotionExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch FromIntToFloat",
+            "request": "launch",
+            "mainClass": "Chapter02.FromIntToFloat",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch CheckValueBeforeCasting",
+            "request": "launch",
+            "mainClass": "Chapter02.CheckValueBeforeCasting",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch CastingExample",
+            "request": "launch",
+            "mainClass": "Chapter02.CastingExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch BooleanExample",
+            "request": "launch",
+            "mainClass": "Chapter02.BooleanExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch FloatDoubleExample",
+            "request": "launch",
+            "mainClass": "Chapter02.FloatDoubleExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch LongExample",
+            "request": "launch",
+            "mainClass": "Chapter02.LongExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch IntExample",
+            "request": "launch",
+            "mainClass": "Chapter02.IntExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch CharExample",
+            "request": "launch",
+            "mainClass": "Chapter02.CharExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch GarbageValueExample",
+            "request": "launch",
+            "mainClass": "Chapter02.GarbageValueExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch ByteExample",
+            "request": "launch",
+            "mainClass": "Chapter02.ByteExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch VariableScopeExmaple",
+            "request": "launch",
+            "mainClass": "Chapter02.VariableScopeExmaple",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch VariableExample",
+            "request": "launch",
+            "mainClass": "Chapter02.VariableExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch RunStatementExample",
+            "request": "launch",
+            "mainClass": "Chapter02.RunStatementExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch Hello",
+            "request": "launch",
+            "mainClass": "Chapter02.Hello",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch subscrible",
+            "request": "launch",
+            "mainClass": "Chapter02.subscrible",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch VariableExample",
+            "request": "launch",
+            "mainClass": "VariableExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch RunStatementExample",
+            "request": "launch",
+            "mainClass": "RunStatementExample",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch Hello",
+            "request": "launch",
+            "mainClass": "Hello",
+            "projectName": "Programming_5a5c114b"
+        },
+        {
+            "type": "java",
+            "name": "Launch App",
+            "request": "launch",
+            "mainClass": "App",
+            "projectName": ""
+        },
+        {
+            "name": "gcc - 활성 파일 빌드 및 디버그",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${fileDirname}/${fileBasenameNoExtension}",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "lldb",
+            "preLaunchTask": "C/C++: gcc 활성 파일 빌드"
+        }
+    ]
+}

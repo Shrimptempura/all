@@ -1,0 +1,74 @@
+<필드의 다형성>
+왜 자동 타입 변환이 필요할까?
+그냥 자식 타입으로 사용하면 될 것을 부모 타입으로 변환해서 사용하는 이유는?
+-> 다형성을 구현하는 기술적 방법 때문이다.
+
+다형성이란 동일한 타입을 사용하지만 다양한 결과가 나오는 성질을 말한다.
+주로 필드의 값을 다양화함으로써 실행 결과가 다르게 나오도록 구현하는데, 필드의 
+타입은 변함이 없지만, 실행 도중에 어떤 객체를 필드로 저장하느냐에 따라 실행 결과가
+달라질수 있다. -> 이것이 필드의 다형성이다.
+
+자동화를 구성하는 부품은 언제든지 교체할 수 있다.
+-> 객체 지향 프로그램에서도 마찬가지이다. 프로그램은 수많은 객체들이 서로 연결되고
+각자의 역할을 하는데, 이 객체들은 다른 객체로 교체될수 있어야 한다.
+
+예로 자동차 클래스를 처음 설계할 때 사용한 타이어 객체는 언제든지 성능이 좋은 다른
+타이어 객체로 교체할 수 있어야 한다.
+새로 교체된 타이어 객체는 기존 타이어와 사용 방법은 동일하지만 실행 결과는 더 우수하게
+나와야 할 것이다. 이것을 프로그램으로 구현하기 위해서는 상속과 오버라이딩, 그리고 
+타입 변환을 이용한다.
+
+부모 클래스를 상속하는 자식 클래스는 부모가 가지고 있는 필드와 메소드를 가지고 있으니
+사용 방법은 동일하며, 자식 클래스는 부모의 메소드를 오버라이딩(재정의)해서 메소드의
+실행 내용을 변경함으로써 더 우수한 실행 결과가 나오게 할 수 있다.
+그리고 자식 타입을 부모 타입으로 변환할 수 있다.
+
+(필드의 다형성)
+    class Car {
+        // 필드
+        Tire frontLeftTire = new Tire();
+        Tire frontRightTire = new Tire();
+        Tire backLeftTire = new Tire();
+        Tire backRightTire = new Tire();
+
+        // 메소드
+        void run() { ... }
+    }
+
+Car 클래스는 4개의 Tire 필드를 가지고 있다. Car 클래스로부터 Car 객체를 생성하면
+4개의 Tire 필드에 각각 하나씩 Tire 객체가 들어가게 된다.
+
+그런데, frontRightTire와 backLeftTire를 HankookTire와 KumhoTire로 교체할 필요성이 생겼다.
+이러한 경우 다음과 같은 코드를 사용해서 교체할 수 있다.
+
+    Car myCar = new Car();
+    myCar.frontRightTire = new HankookTire();
+    myCar.backLeftTire = new KumhoTire();
+    myCar.run();
+
+Tire 클래스 타입인 frontRightTire와 backLeftTire는 원래 Tire 객체가 저장되어야 하지만,
+Tire의 자식 객체가 저장되어도 문제가 없다.
+
+왜냐하면 자식 타입은 부모 타입으로 자동 타입 변환이 되기 때문이다.
+frontRightTire와 backLeftTire에 Tire 자식 객체가 저장되어도 Car 객체는 Tire 클래스에
+선언된 필드와 메소드만 사용하므로 전혀 문제가 되지 않는다. 
+
+HankookTire와 KumhoTire는 부모인 Tire의 필드와 메소드를 가지고 있기 때문이다.
+
+Car 객체에 run() 메소드가 있고, run() 메소드는 각 Tire 객체의 roll() 메소드를
+다음과 같이 호출한다고 가정해보자
+
+    void run() {
+        frontLeftTire.roll();
+        frontRightTire.roll();
+        backLeftTire.roll();
+        backRightTire.roll();
+    }
+
+frontRightTire와 backLeftTire를 교체하기 전에는 Tire 객체의 roll() 메소드가 호출되지만,
+HankookTire와 KumhoTire로 교체가 되면 HankookTire와 KumhoTire가 roll() 메소드를
+재정의하고 있으므로 교체 이후에는 HankookTire와 KumhoTire의 roll() 메소드가 호출된다.
+
+이와 같이 자동 타입 변환을 이용해서 Tire 필드값을 교체함으로써
+Car의 run() 메소드 수정 없이도 다양한 roll() 메소드의 실행 결과를 얻게된다.
+-> 이것이 필드의 다형성이다.

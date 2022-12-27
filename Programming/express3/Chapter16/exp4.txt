@@ -1,0 +1,68 @@
+<#ifdef, #endif>
+
+#ifdef은 조건부 컴파일을 지시하는 전처리 지시자이다. 조건부 컴파일이란 어떤 조건이 만족
+되는 경우에만 지정된 소스 코드 블록을 컴파일 하는 것이다.
+    걸리지 않은 문장들은 컴파일되지 않아서 실행 코드에 포함되지 않는다.
+    (아예 것으로 취급한다)
+Syntax : 조건부 컴파일
+    #ifdef DEBUG
+        printf("value = %d\n", value);
+    #endif
+
+디버깅 시에 가장 많이 사용되는 기법이 의심이 가는 부분에서 변수의 값들을 출력해서
+보는 것. 예로)
+int average(int x, int y) {
+    printf("x = %d, y =%d\n", x, y);
+    ...
+}
+위와 같은 출력문은 디버깅 시에는 유용하지만 디버깅이 끝나면 불필요한 문장이다.
+오히러 출력하느냐 실행 속도를 떨어뜨린다. 따라서 다음과 같이 조건부 컴파일을
+사용하는 것이 좋다.
+    #define DEBUG
+
+    int average(int x, int y) {
+    #ifdef DEBUG
+        printf("x = %d, y = %d\n", x, y);
+    #endif
+        ...
+    }
+
+위의 문장은 DEBUG라는 매크로가 정의되어 있으면 컴파일 된다. DEBUG 매크로가 선언되어
+있지 않다면 아예 컴파일에 포함되지 않는다. 
+DEBUG라는 매크로는 보통 소스 코드의 첫 부분 정의나 컴파일 옵션으로 제공하기도 한다.
+
+이와 같이 #ifdef은 프로그램을 디버깅할 때 많이 사용된다.
+제품으로 출시될때는 DEBUG를 정의하지 않아서 디버깅 정보를 출력하는 문장들이 
+컴파일에 포함되지 않는다.
+
+<여러 가지 버전 정의하기>
+어떤 회사에서 DELUXE 버전과 STANDARD 버전의 프로그램이 개발됬다.
+두 버전의 소스를 따로 작성하는 것보다 동일한 소스를 가지고 2가지의 버전을 
+만들 수 있으면 편리할 것이다. DELUXE 버전을 만들기 위해서는 소스 파일의 시작 부분에서
+DELUXE라고 하는 매크로를 정의하면 된다. 만약 DELUXE 매크로가 정의되어 있지 않으면
+STANDARD 버전으로 컴파일될 것이다.
+
+#define DELUXE
+
+int main(void) {
+#ifdef DELUXE
+    printf("디럭스 버전\n");
+#endif
+    return 0;
+}
+
+#ifdef과 #else를 함께 사용할 수도 있다. #else를 사용하면 매크로가 정의되지 않았을 
+경우 컴파일 되는 문장들이 들어간다. 
+
+#include <stdio.h>
+#define LINUX
+
+int main(void)
+{
+#ifdef LINUX
+    printf("리눅스\n");
+#else
+    printf("window\n");
+#endif
+    return 0;
+}

@@ -1,0 +1,31 @@
+{
+    "files.associations": {
+        "stdio.h": "c",
+        "ratio": "c",
+        "algorithm": "c",
+        "stdlib.h": "c",
+        "__functional_base": "c",
+        "__functional_base_03": "c",
+        "__hash_table": "c",
+        "__tuple": "c",
+        "array": "c",
+        "chrono": "c",
+        "type_traits": "c",
+        "functional": "c",
+        "iterator": "c",
+        "limits": "c",
+        "memory": "c",
+        "tuple": "c",
+        "utility": "c",
+        "string.h": "c",
+        "random": "c",
+        "P2.C": "cpp",
+        "typeinfo": "c",
+        "__locale": "c",
+        "word.h": "c"
+    },
+    "java.project.sourcePaths": [
+        "dse/10.Graph",
+        "ThisJava"
+    ]
+}

@@ -1,0 +1,43 @@
+<math.h> 라이브러리 함수 사용법
+
+floor()와 ceil()
+floor() : 실수를 정수값으로 내림  ex) 1.6 --> 1
+ceil() : 실수를 정수값으로 올림   ex) 1.6 --> 2
+    res = floor(value)
+    res = ceil(value)
+
+fabs()
+fab()는 실수를 받아서 절대값 반환, "float absolute"
+    fab(-1333) --> 1333
+    나이, 무게, 거리의 차 계산시 유용
+    >> 음수의 제곱근 계산불가하나. fabs()로 가능
+       ex) -25.0의 제곱근 --> value = sqrt(fabs(-25.0));
+
+pow()와 sqrt()
+pow() : 제곱값 계산,    "power"
+sqrt() : 값의 제곱근을 반환,   "square root"
+    pow(10, 3) --> 10의 3승은 1000;
+    sqrt(16) --> 16의 제곱근은 4;
+
+cos(double x), sin(double x), tan(double x)
+    각도는 라디안으로 표시, 1 라디안은 180/pie
+// 삼각 함수 라이브러리             라디안이 아닌 도 단위
+#include <math.h>                   => degrees = (radians/3.141592) * 180.0;
+#include <stdio.h>
+
+int main(void)
+{
+    double pi = 3.1415926535;
+    double x, y;
+
+    x = pi / 2;
+    y = sin(x);
+    printf("sin(%f) = %f\n", x, y);
+    y = cos(x);
+    printf("cos(%f) = %f\n", x, y);
+
+    return 0;
+}
+        실행결과 : sin(1.570796) = 1.000000
+                   cos(1.570796) = 0.000000
+

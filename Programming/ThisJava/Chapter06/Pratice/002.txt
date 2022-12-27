@@ -1,0 +1,6 @@
+2. 클래스의 구성 멤버가 아닌것
+    1) 필드(field)
+    2) 생성자(constructor)
+    3) 메소드(method)
+
+    4) 로컬 변수(local variable) (x)

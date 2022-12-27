@@ -1,0 +1,44 @@
+<다른 방법과의 비교>
+기본적으로 열거형은 정수 형태의 기호 상수를 정의하는 경우에 사용된다. 
+
+1) 정수 사용
+switch(code)
+{
+    case 1:
+        printf("LCD TV\n");
+        break;
+    case 2:
+        printf("OLED TV\n");
+        break;
+}   // 컴퓨터는 알기 쉬우나 사람은 기억하기 어렵다.
+
+2) 기호 상수
+#define LCD 1
+#define OLED 2
+
+switch(code)
+{
+    case LCD:
+        printf("LCD TV\n");
+        break;
+    case OLED:
+        printf("OLED TV\n");
+        break;
+}   // 기호 상수를 작성할 때 오류를 저지를수 있다.
+
+3) 열거형
+enum tvtype {LCD, OLED};
+enum tvtype code;
+
+switch(code)
+{
+    case LCD:
+        printf("LCD TV\n");
+        break;
+    case OLED:
+        printf("OLED TV\n");
+        break;
+}   // 컴파일러가 중복이 일어나지 않도록 체크한다.
+
+==> 열거형을 사용하면 특정한 숫자 대신에 기호를 사용함으로써 프로그램의 이해도를 향상
+    시킬수 있고, 변수가 열거된 값 이외의 값을 취하는 것을 막아서 오류를 줄여준다.

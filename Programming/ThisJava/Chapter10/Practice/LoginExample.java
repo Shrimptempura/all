@@ -1,0 +1,32 @@
+package Chapter10.Practice;
+// 예외 발생 및 떠넘기기
+public class LoginExample {
+    public static void main(String[] args) {
+        try {
+            login("white", "12345");
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
+
+        try {
+            login("blue", "54321");
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
+    }
+
+    public static void login(String id, String password) throws NotExistIDException,
+        WrongPasswordException {
+    // 내가 한것 : 모든 예외처리, throws Exception {
+
+        // id가 "blue"가 아니라면 NotExistIDException 발생시킴
+        if (!id.equals("blue")) {
+            throw new NotExistIDException("아이디가 존재하지 않습니다.");
+        }
+
+        // password가 "12345"가 아니라면 WrongPasswordException 발생시킴
+        if (!password.equals("12345")) {
+            throw new WrongPasswordException("패스워드가 틀립니다.");
+        }
+    }
+}

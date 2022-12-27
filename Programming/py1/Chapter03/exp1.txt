@@ -1,0 +1,41 @@
+<if절>
+if 조건식 :(콜론)
+
+ex) if age < 20:
+    print('청소년 할인')
+
+<for문>
+for i in range(n):
+i -> 새로운 변수
+n -> 반복 실행 횟수
+
+range(n)은 하나의 정수 말고
+range(0, 5)와 같이 시작값과 마지막 값을 지정 가능
+
+1씩 증가말고 특정 값만큼 뛰는걸 원할 경우
+range(0, 5, 2)와 같이 마지막에 증가치를 넣을 수 있다.
+
+range(5)는 0부터 시작이므로 range(0, 5)와 같다.
+
+range([start] stop [, step])
+start -> 초기값 생략시 0
+stop -> 반복조건 < stop이면 반복
+, step -> 증가값 생략시 1
+
+
+range() 함수는 실수 값을 인자로 가질 수 없다.
+Numpy 모듈의 arange()는 실수의 시작 값, 종료 값, 스텝 값을 가질 수 있다.
+
+print() 함수 내의 end 키워드 인자는 print() 함수에서 출력 후 내보낼 문자를 지정하는
+역할을 한다.
+
+    print(i, end = ' ')
+end는 공백문자를 지정했으므로 i 뒤에는 공백 출력되어
+
+    for i in range(5):
+        print(i, end = ' ')
+
+<for문과 리스트>
+for n in numbers:
+n -> 변수
+numbers -> 순회할 리스트 이름

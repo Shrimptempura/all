@@ -1,0 +1,1 @@
+a, b, c = map(int, input('세 복권번호를 입력하시오 : ').split())

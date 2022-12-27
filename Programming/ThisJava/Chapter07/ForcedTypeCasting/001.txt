@@ -1,0 +1,49 @@
+<강제 타입 변환> (Forced Type Casting)
+강제 타입 변환(Casting)은 부모 타입을 자식 타입으로 변환하는 것을 말한다.
+
+모든 부모 타입을 자식 클래스 타입으로 강제 변환할 수 있는 것은 아니다.
+
+자식 타입이 부모 타입으로 자동 변환한 후, 다시 자식 타입으로 변환할 때
+강제 타입 변환을 사용할 수 있다.
+
+    자식클래스 변수 = (자식클래스) 부모클래스타입;
+                                // 자식 타입이 부모 타입으로 변환된 상태
+                                // 부모클래스 타입 -> 변수
+
+자식 타입이 부모 타입으로 자동 변환하면, 부모 타입에 선언된 필드와 메소드만
+사용 가능하다는 제약 사항이 따른다.
+
+만약 자식 타입에 선언된 필드와 메소드를 꼭 사용해야 한다면 강제 타입 변환을
+다시해서 다시 자식 타입으로 변환한 다음 자식 타입의 필드와 메소드를 사용하면 된다.
+
+1) class Parent {
+    String field1;
+    void method1() { ... }
+    void method2() { ... }
+}
+
+2) class Child extends Parent {         2   ->(Inheritance)    1
+    String field2;
+    void method3() { ... }
+}
+
+3) class ChildExample {
+    public static void main(String[] args) {
+        Parent Parent = new Child();
+        parent.field1 = "xxx";
+        parent.method1();
+        parent.method2();
+        parent.field2 = "yyy";  (불가능)        // 26행 x
+        parent.method3();       (불가능)        // 27행 x
+
+        Child child = (Child) parent;
+        child.field2 = "yyy";   (가능)
+        child.method3();        (가능)
+    }
+}
+
+field2 필드와 method3() 메소드는 Child 타입에만 선언되어 있으므로
+Parent 타입으로 자동 타입 변환하면 사용할 수 없다.
+
+field2 필드와 method3() 메소드를 사용하고 싶다면 다시 Child 타입으로 강제 타입 변환을
+해야 한다.

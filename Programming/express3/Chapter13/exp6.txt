@@ -1,0 +1,9 @@
+<typedef의 장점>
+1) 이식성을 높여준다.
+2) #define과의 차이점
+    #define UINT32 unsigned int
+    #define보다는 typedef이 훨씬 좋은 방법, typedef은 컴파일러가 직접 처리한다.
+
+    typedef float VECTOR[2];    // #define으로는 불가능하다.
+
+3) 문서화의 역할도 한다.

@@ -1,0 +1,15 @@
+Syntax : fwirte()
+        fwirte(buffer, sizeof(int), SIZE, fp);
+        buffer = 메모리 블록의 주소
+        sizeof(int) = 항목의 크기
+        SIZE = 항목의 개수
+        fp = FILE 포인터
+
+    fwirte()는 buffer가 가리키는 위치에서 데이터를 읽어서 이진 파일에 저장한다.
+    fwirte()는 실제로 파일에 쓴 항목의 수를 반환한다.
+
+- buffer는 파일에 기록할 데이터를 가지고 있는 메모리 블록의 시작 주소이다.
+- size는 저장되는 항목의 크기로서 단위는 바이트이다.
+- count는 읽으려고 하는 항목들의 개수이다. 만약 int형의 데이터 10개를 쓰려고 하면
+  항목의 크기는 4가 되고 항목의 개수는 10이 될 것이다.
+- fp는 FILE 포인터이다.

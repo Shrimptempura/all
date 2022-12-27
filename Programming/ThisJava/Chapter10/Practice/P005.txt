@@ -1,0 +1,30 @@
+<다음과 같은 메소드가 있을 때 예외를 잘못 처리한 것은 무엇입니까?>
+    public void method1() throws NumberFormatException, ClassNotFoundException { ... }
+
+1. try {
+    method1();
+} catch (Exception e) {
+    ;
+}
+
+2. void method2() throws Exception {
+    method1();
+}
+
+4. try {
+    method1();
+} catch (ClassNotFoundException e) {
+    ;
+} catch (NumberFormatException) {
+    ;
+}
+
+
+
+3. try {                            (x)
+    method1();
+} catch (Exception e) {                 // 상위 예외 클래스의 catch 블록이 위에 있어서 
+    ;                                   // 하위 예외 클래스(ClassNotFoundException)가 실행되지 않음
+} catch (ClassNotFoundException e) {
+    ;
+}

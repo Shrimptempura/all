@@ -1,0 +1,40 @@
+<매개 변수의 다형성> Parameter Polymophism
+자동 타입 변환은 필드의 값을 대입할 때에도 발생하지만, 주로 메소드를 호출할 때 많이 발생한다.
+매개값을 다양화하기 위해서 상속에서는 매개 변수를 부모 타입으로 선언하고 호출할 때에는 자식 객체를
+대입했었다. 이번에는 매개 변수를 인터페이스 타입으로 선언하고 호출할 때에는 구현 객체를 대입한다.
+
+예를 들어 다음과 같이 Driver 클래스에는 dirve() 메소드가 정의되어 있는데 Vehicle 타입의 매개 변수가
+선언되어 있다.
+
+    public class Dirver {
+        public void drive(Vehicle vehicle) {
+            vehicle.run();
+        }
+    }
+
+Vehicle을 다음과 같이 인터페이스 타입이라고 가정해보자
+
+    public interface Vehicle {
+        public void run();
+    }
+
+만약 Bus가 구현 클래스라면 다음과 같이 Driver의 drive() 메소드를 호출할 때 Bus 객체를 생성해서
+매개값으로 줄 수 있다.
+
+
+인터페이스 Vehicle  <<interface>> Vehicle       <-(implements 구현)  구현 클래스 Bus 
+    Driver driver = new Driver();
+    Bus bus = new Bus();
+    driver.drive(bus);      // 자동 타입 발생       Vehicle vehicle = bus;
+
+dirve() 메소드는 Vehicle 타입을 매개 변수로 선언했지만, Vehicle을 구현한 Bus 객체가 매개 값으로
+사용되면 자동 타입 변환이 발생한다.
+
+    Vehicle vehicle = bus;      // 자동 타입 변환
+
+매개 변수의 타입이 인터페이스일 경우, 어떠한 구현 객체도 매개값으로 사용할 수 있고, 어떤 구현 객체가 
+제공되느냐에 따라 메소드의 실행 결과는 다양해질 수 있다(매개 변수의 다형성)
+
+ void drive(Vehicle vehicle // : 구현객체) {
+     vehicle.run();     // 구현 객체의 run() 메소드가 실행됨
+ }
